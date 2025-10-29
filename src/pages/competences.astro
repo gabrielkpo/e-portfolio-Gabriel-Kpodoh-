@@ -1,0 +1,120 @@
+---
+import H1 from "../components/h1.astro";
+import InfoLayout from "../layouts/InfoLayout.astro";
+---
+
+<InfoLayout>
+     <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh flex flex-col justify-between gap-32 max-w-6xl mx-auto">
+          <div class="space-y-4 sm:space-y-12">
+               <H1> Compétences </H1>
+
+               <p class="text-xl xl:text-2xl text-zinc-500 text-balance">
+                    Voici un aperçu de mes compétences techniques et humaines. Je suis
+                    polyvalent·e et j'aime résoudre des problèmes complexes en
+                    combinant bonnes pratiques d'ingénierie et design centré utilisateur.
+
+               </p>
+               <p class="text-xl xl:text-2xl text-zinc-500 text-balance">
+                    .... [ajouter pragraphe ici pour compléter la page]
+               </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 text-base sm:text-lg">
+               <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                         <div class="w-12 h-12 rounded-md bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center">
+                              <svg width="70" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                                   <path d="M12 2L15 8H9L12 2Z" fill="currentColor" />
+                                   <path d="M12 22V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                         </div>
+                         <div>
+                              <h3 class="text-white text-lg font-semibold">Techniques</h3>
+                              <p class="text-zinc-400 text-sm">Langages, frameworks et systèmes embarqués</p>
+                         </div>
+                    </div>
+
+                    <div class="space-y-3">
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Python / ML</span><span>90%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-teal-400" style="width:90%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Embedded C / RTOS</span><span>75%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-teal-400" style="width:75%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>JavaScript / Astro</span><span>80%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-teal-400" style="width:80%"></div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                         <div class="w-12 h-12 rounded-md bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                                   <path d="M4 6H20V8H4V6Z" fill="currentColor" />
+                                   <path d="M4 10H20V12H4V10Z" fill="currentColor" />
+                              </svg>
+                         </div>
+                         <div>
+                              <h3 class="text-white text-lg font-semibold">Outils</h3>
+                              <p class="text-zinc-400 text-sm">Environnements et plateformes</p>
+                         </div>
+                    </div>
+
+                    <div class="space-y-3">
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>VS Code</span><span>95%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-purple-500" style="width:95%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Figma</span><span>70%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-purple-500" style="width:70%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>CI / Déploiement</span><span>75%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-purple-500" style="width:75%"></div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                         <div class="w-12 h-12 rounded-md bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                                   <path d="M12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2Z" fill="currentColor" />
+                                   <path d="M6 20C6 16.6863 8.68629 14 12 14C15.3137 14 18 16.6863 18 20H6Z" fill="currentColor" />
+                              </svg>
+                         </div>
+                         <div>
+                              <h3 class="text-white text-lg font-semibold">Soft skills</h3>
+                              <p class="text-zinc-400 text-sm">Communication et leadership</p>
+                         </div>
+                    </div>
+
+                    <div class="space-y-3">
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Communication</span><span>90%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-amber-400" style="width:90%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Travail en équipe</span><span>85%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-amber-400" style="width:85%"></div>
+                         </div>
+
+                         <div class="flex justify-between text-zinc-300 text-sm"><span>Autonomie</span><span>80%</span></div>
+                         <div class="w-full bg-zinc-700 h-2 rounded-full overflow-hidden">
+                              <div class="h-2 bg-amber-400" style="width:80%"></div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</InfoLayout>

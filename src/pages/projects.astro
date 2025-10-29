@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import H1 from "../components/h1.astro";
+import InfoLayout from "../layouts/InfoLayout.astro";
+import astro from "../assets/astro.webp";
+import simu from "../assets/simu.jpg";
+import ronaldo from "../assets/ronaldo.jpg";
+import chute from "../assets/chute.webp";
+import montre from "../assets/montre.jpg";
+import velo from "../assets/velo.png";
+
+
+const projects = [
+     {
+          title: "IA de détection des chutes",
+          description: "Système d'intelligence artificielle pour détecter automatiquement les chutes chez les personnes âgées à partir de capteurs et de flux vidéo.",
+          image: chute
+     },
+     {
+          title: "Développement e-portfolio en Astro",
+          description: "Conception et mise en place d'un e-portfolio performant avec Astro, optimisation des performances et accessibilité.",
+          image: astro
+     },
+     {
+          title: " Capteur de couple vélo intelligent ",
+          description: "Elaboration d'un capteur de couple pour vélo intégrant des fonctionnalités intelligentes de suivi et d'analyse des performances cyclistes.",
+          image: velo
+     },
+     {
+          title: "Logiciel de simulation électronique",
+          description: "Outil de simulation pour circuits électroniques permettant l'analyse temporelle et fréquentielle des signaux.",
+          image: simu
+     },
+     {
+          title: " Projet en cours : IA embarqué de détection des mouvements sportifs",
+          description: "Système d'intelligence artificielle pour optimiser les mouvements sportifs à partir de capteurs et de flux vidéo.",
+          image: ronaldo
+     },
+
+     {
+          title: " Projet Object connecté ",
+          description: "Développement d'une montre connectée pour le suivi de la santé et des activités physiques.",
+          image: montre
+     },
+     ];
+---
+
+<InfoLayout>
+     <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+          <H1> Mes Projets </H1>
+
+          <ul class="mt-4 sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 sm:gap-8">
+               {projects.map((project) => (
+                    <li>
+                         <Image src={project.image} alt={project.title} class="aspect-video object-center object-cover rounded-lg shadow-lg mb-4 sm:mb-0 sm:mr-4" />
+                         <div class="p-1 sm:p-2">
+                              <h2 class="text-base text-zinc-100">{project.title}</h2>
+                              <p class="text-sm text-zinc-400 text-balance">{project.description}</p>
+                         </div>
+                    </li>
+               ))}
+          </ul>
+     </div>
+</InfoLayout>
