@@ -5,8 +5,8 @@ import ExternalLink from "./external-link.astro";
 const pathname = Astro.url.pathname;
 ---
 
-<footer class="py-4 px-4 sm:px-12 w-full fixed bottom-0 flex items-center gap-4 sm:gap-8 bg-zinc-900">
-    <div class="flex gap-1">
+<footer class="py-4 px-4 sm:px-12 w-full fixed bottom-0 flex items-center gap-4 sm:gap-8 bg-zinc-900 overflow-x-auto whitespace-nowrap no-scrollbar">
+    <div class="flex gap-1 flex-shrink-0">
         <ExternalLink href="/" openNewTab={false}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6 text-zinc-500 group-hover:text-zinc-100">
                 <title>Home</title>
@@ -26,7 +26,10 @@ const pathname = Astro.url.pathname;
     </div>
 
     <ExternalLink href="/blog" openNewTab={false}>Blog</ExternalLink>
-    <ExternalLink href="/competences" openNewTab={false}>Compétences</ExternalLink>
     <ExternalLink href="/parcours" openNewTab={false}>Parcours</ExternalLink>
+    <ExternalLink href="/competences" openNewTab={false}>Compétences</ExternalLink>
+    <ExternalLink href="/international-mobility" openNewTab={false}>International Mobility</ExternalLink>
+    <ExternalLink href="/sustainability-engagement" openNewTab={false}>Sustainability & Civic Engagement</ExternalLink>
+    <ExternalLink href="/career-development" openNewTab={false}>Career Development</ExternalLink>
     <ExternalLink href="/contact" openNewTab={false}>Contact</ExternalLink>
 </footer>
