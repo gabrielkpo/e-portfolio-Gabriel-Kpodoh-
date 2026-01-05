@@ -1,0 +1,44 @@
+---
+import H1 from "../components/h1.astro";
+import InfoLayout from "../layouts/InfoLayout.astro";
+---
+
+<InfoLayout title="International Mobility — Gabriel">
+  <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh flex flex-col gap-12 max-w-6xl mx-auto">
+    <H1>International Mobility</H1>
+    
+    <p class="text-xl xl:text-2xl text-zinc-500 text-balance">
+      Découvrez mes expériences à l'étranger, mes échanges académiques et mes projets internationaux.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
+        <h2 class="text-white text-xl font-semibold mb-4">Échanges Académiques</h2>
+        <p class="text-zinc-400">Détails sur les universités partenaires et les cours suivis.</p>
+      </div>
+      
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
+        <h2 class="text-white text-xl font-semibold mb-4">Stages à l'International</h2>
+        <p class="text-zinc-400">Expériences professionnelles hors de France.</p>
+      </div>
+      
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 md:col-span-2">
+        <h2 class="text-white text-xl font-semibold mb-4">Langues</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <p class="text-zinc-300 font-medium">Français</p>
+            <p class="text-zinc-500 text-sm">Maternel</p>
+          </div>
+          <div>
+            <p class="text-zinc-300 font-medium">Anglais</p>
+            <p class="text-zinc-500 text-sm">Avancé (C1/C2)</p>
+          </div>
+          <div>
+            <p class="text-zinc-300 font-medium">Autre langue</p>
+            <p class="text-zinc-500 text-sm">Niveau</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</InfoLayout>

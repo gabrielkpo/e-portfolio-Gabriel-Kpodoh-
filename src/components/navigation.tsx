@@ -39,6 +39,14 @@ export default function Navigation({ children }: { children: React.ReactNode; })
                                     Blog
                                 </MobileLink>
 
+                                <MobileLink href="/parcours">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden>
+                                        <title>Parcours Icon</title>
+                                        <path fill="currentColor" d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" opacity=".5" />
+                                    </svg>
+                                    Parcours
+                                </MobileLink>
+
                                 <MobileLink href="/competences">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden>
                                         <title>Info Icon</title>
@@ -46,6 +54,30 @@ export default function Navigation({ children }: { children: React.ReactNode; })
                                         <path fill="currentColor" d="M7.5 11.11c0 1.368 1.319 2.804 2.529 3.833c.823.7 1.235 1.05 1.971 1.05s1.148-.35 1.971-1.05c1.21-1.03 2.529-2.465 2.529-3.834c0-2.677-2.475-3.676-4.5-1.608c-2.025-2.068-4.5-1.069-4.5 1.608" />
                                     </svg>
                                     Compétences
+                                </MobileLink>
+
+                                <MobileLink href="/international-mobility">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden>
+                                        <title>Globe Icon</title>
+                                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93c0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41c0 2.08-.8 3.97-2.1 5.39z" opacity=".5" />
+                                    </svg>
+                                    International Mobility
+                                </MobileLink>
+
+                                <MobileLink href="/sustainability-engagement">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden>
+                                        <title>Sustainability Icon</title>
+                                        <path fill="currentColor" d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" opacity=".5" />
+                                    </svg>
+                                    Sustainability & Civic Engagement
+                                </MobileLink>
+
+                                <MobileLink href="/career-development">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden>
+                                        <title>Career Icon</title>
+                                        <path fill="currentColor" d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" opacity=".5" />
+                                    </svg>
+                                    Career Development
                                 </MobileLink>
 
                                 <MobileLink href="/contact">

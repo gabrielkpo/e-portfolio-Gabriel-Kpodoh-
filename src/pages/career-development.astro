@@ -1,0 +1,37 @@
+---
+import H1 from "../components/h1.astro";
+import InfoLayout from "../layouts/InfoLayout.astro";
+---
+
+<InfoLayout title="Career Development — Gabriel">
+  <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh flex flex-col gap-12 max-w-6xl mx-auto">
+    <H1>Career Development</H1>
+    
+    <p class="text-xl xl:text-2xl text-zinc-500 text-balance">
+      Ma vision de carrière, mes certifications et mon plan de développement professionnel.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
+        <h2 class="text-white text-xl font-semibold mb-6">Certifications</h2>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3 text-zinc-300">
+            <span class="text-green-500">✅</span>
+            <span>Certification A (Année)</span>
+          </li>
+          <li class="flex items-center gap-3 text-zinc-300">
+            <span class="text-green-500">✅</span>
+            <span>Certification B (Année)</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
+        <h2 class="text-white text-xl font-semibold mb-6">Objectifs à court terme</h2>
+        <p class="text-zinc-400 leading-relaxed">
+          Spécialisation en architecture logicielle et management d'équipe.
+        </p>
+      </div>
+    </div>
+  </div>
+</InfoLayout>
