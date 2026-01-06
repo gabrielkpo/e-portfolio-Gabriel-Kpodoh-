@@ -13,24 +13,60 @@ import InfoLayout from "../layouts/InfoLayout.astro";
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
-        <h2 class="text-white text-xl font-semibold mb-6">Certifications</h2>
-        <ul class="space-y-4">
-          <li class="flex items-center gap-3 text-zinc-300">
-            <span class="text-green-500">✅</span>
-            <span>Certification A (Année)</span>
+        <h2 class="text-white text-xl font-semibold mb-6 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-500"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          Certifications
+        </h2>
+        <ul class="space-y-6">
+          <li class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="text-green-500">✅</span>
+              <span class="text-zinc-100 font-medium italic italic">Imperial College London</span>
+            </div>
+            <p class="text-zinc-400 text-sm ml-7">Mathématique avancée pour l'apprentissage automatique (3 semaines)</p>
           </li>
-          <li class="flex items-center gap-3 text-zinc-300">
-            <span class="text-green-500">✅</span>
-            <span>Certification B (Année)</span>
+          <li class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="text-green-500">✅</span>
+              <span class="text-zinc-100 font-medium italic italic">Stanford University</span>
+            </div>
+            <p class="text-zinc-400 text-sm ml-7">Algorithme de Machine Learning avancée (2 mois)</p>
+          </li>
+          <li class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="text-green-500">✅</span>
+              <span class="text-zinc-100 font-medium italic italic">University of Colorado</span>
+            </div>
+            <p class="text-zinc-400 text-sm ml-7">VHDL pour la conception de FPGA (2 semaines)</p>
           </li>
         </ul>
       </div>
       
       <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8">
-        <h2 class="text-white text-xl font-semibold mb-6">Objectifs à court terme</h2>
-        <p class="text-zinc-400 leading-relaxed">
-          Spécialisation en architecture logicielle et management d'équipe.
-        </p>
+        <h2 class="text-white text-xl font-semibold mb-6 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Formations & Conférences
+        </h2>
+        <ul class="space-y-4">
+          <li class="p-4 bg-zinc-900/50 border border-zinc-700/50 rounded-lg">
+            <p class="text-zinc-200 font-medium mb-1 italic">Gestion et Management</p>
+            <p class="text-zinc-400 text-sm italic italic">Gestion de projet, management, ingénieur du futur</p>
+          </li>
+          <li class="p-4 bg-zinc-900/50 border border-zinc-700/50 rounded-lg">
+            <p class="text-zinc-200 font-medium mb-1 italic">Durable & Tech</p>
+            <p class="text-zinc-400 text-sm italic italic">RSE, éco-ingénierie, finance verte, Green-AI</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-zinc-800/40 border border-zinc-700 rounded-xl p-8 md:col-span-2">
+        <h2 class="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-8 text-center">Partenaires & Institutions de formation</h2>
+        <div class="flex flex-wrap items-center justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+          <span class="text-white font-bold text-xl">EY</span>
+          <span class="text-white font-bold text-xl italic italic">ENGIE</span>
+          <span class="text-white font-bold text-xl uppercase italic">Alten</span>
+          <span class="text-white font-bold text-xl italic italic">BNP PARIBAS</span>
+        </div>
       </div>
 
       <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 md:col-span-2">
