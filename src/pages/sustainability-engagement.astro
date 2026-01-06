@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import H1 from "../components/h1.astro";
 import InfoLayout from "../layouts/InfoLayout.astro";
 import pompierImage from "../assets/pompier.jpg";
+import logoEcolesMonde from "../assets/LOGO-ECOLES-DU-MONDE.avif";
 ---
 
 <InfoLayout title="Sustainability & Civic Engagement — Gabriel">
@@ -40,14 +41,21 @@ import pompierImage from "../assets/pompier.jpg";
       <!-- Madagascar Section -->
       <div class="bg-zinc-800/60 border border-zinc-700 rounded-2xl p-8 flex flex-col justify-between">
         <div>
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13V5a2 2 0 0 1 2-2h5"/><path d="M13 20a7 7 0 0 0 7-7V5a2 2 0 0 0-2-2h-5"/><path d="M12 20v2"/><path d="M12 3v2"/></svg>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13V5a2 2 0 0 1 2-2h5"/><path d="M13 20a7 7 0 0 0 7-7V5a2 2 0 0 0-2-2h-5"/><path d="M12 20v2"/><path d="M12 3v2"/></svg>
+              </div>
+              <h2 class="text-white text-2xl font-semibold text-green-100">Mission Humanitaire</h2>
             </div>
-            <h2 class="text-white text-2xl font-semibold text-green-100">Mission Humanitaire</h2>
+            <Image 
+              src={logoEcolesMonde} 
+              alt="Logo Écoles du Monde" 
+              class="h-10 w-auto object-contain bg-white rounded-md p-1"
+            />
           </div>
           <h3 class="text-zinc-100 font-medium mb-2">Madagascar — 6 semaines</h3>
-          <p class="text-zinc-500 text-sm mb-4 italic italic">Association Écoles du Monde</p>
+          <p class="text-zinc-500 text-sm mb-4 italic">Association Écoles du Monde</p>
           <p class="text-zinc-400 leading-relaxed mb-6">
             Animation de camps de vacances en brousse pour les enfants et jeunes malgaches de tous niveaux. Ma mission consistait à apporter un soutien éducatif et technique à travers diverses ateliers :
           </p>
