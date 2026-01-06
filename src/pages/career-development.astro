@@ -32,6 +32,35 @@ import InfoLayout from "../layouts/InfoLayout.astro";
           Spécialisation en architecture logicielle et management d'équipe.
         </p>
       </div>
+
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-xl p-8 md:col-span-2">
+        <h2 class="text-white text-xl font-semibold mb-6">Projet Professionnel Personnalisé (PPP)</h2>
+        <p class="text-zinc-400 mb-6 leading-relaxed">
+          Retrouvez ci-dessous mon dossier complet de Projet Professionnel Personnalisé. Ce document détaille ma réflexion sur mon parcours, mes aspirations et ma stratégie de carrière.
+        </p>
+
+        <div class="w-full aspect-[1/1.4] sm:aspect-video rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 shadow-2xl">
+          <iframe 
+            src="/PPP_Kpodoh_Gabriel.pdf" 
+            class="w-full h-full border-none"
+            title="PPP - Gabriel Kpodoh"
+          >
+          </iframe>
+        </div>
+        
+        <div class="mt-6 flex justify-end">
+          <a 
+            href="/PPP_Kpodoh_Gabriel.pdf" 
+            download 
+            class="inline-flex items-center gap-2 px-6 py-2 bg-zinc-100 text-zinc-900 font-semibold rounded-full hover:bg-white transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            Télécharger le document
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </InfoLayout>
